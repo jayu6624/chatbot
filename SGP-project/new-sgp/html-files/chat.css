@@ -1,0 +1,79 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+  --font-semi: 600;
+  /*===== Colores =====*/
+  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+  /* HSL color mode */
+  --hue-color: 224;
+  --first-color: hsl(var(--hue-color), 89%, 60%);
+  --second-color: hsl(var(--hue-color), 56%, 12%);
+  /*===== Fuente y tipografia =====*/
+  --body-font: "Poppins", sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+  --smaller-font-size: 0.75rem;
+  /*===== Margenes =====*/
+  --mb-2: 1rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+  /*===== z index =====*/
+  --z-back: -10;
+  --z-fixed: 100;
+}
+/* @media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: 0.875rem;
+  }
+}
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  /* border: 5px solid black; */
+/* }
+.image {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  width: 8%;
+}
+.text_right {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  text-decoration: double;
+}
+.input_content {
+  height: 60px;
+  border: 2px solid red;
+}
+.logo_next {
+  display: inline;
+  width: 40px;
+}
+
+.logo_next {
+  top: 30px;
+}
+.input_val {
+  width: 30%;
+  height: 30px;
+  border: 3px solid black;
+  border-radius: 20px;
+  display: inline;
+} */
+
+img {
+  background-color: black;
+  border-radius: 50%;
+}

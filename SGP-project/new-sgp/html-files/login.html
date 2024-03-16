@@ -1,0 +1,149 @@
+<?php include('server.php')?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/new-sgp/login.css" />
+    <link rel="stylesheet" href="/new-sgp/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div class="widthof">
+          <img src="/new-sgp/image/logo-photo.png" alt="" class="logoimg" />
+          <a href="#" class="nav__logo">Code_निवारण</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a
+                href="/new-sgp/html-files/index.html"
+                class="nav__link active-link"
+                >Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact-Us</a>
+            </li>
+            <li class="nav__item" id="right_1">
+              <a href="login.html" class="nav__link"
+                >Login
+                <img
+                  class="right_sym"
+                  src="/new-sgp/image/Screenshot 2024-02-19 132505.png"
+                  alt=""
+              /></a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+    <div class="background">
+      <div class="center">
+        <h1>Login</h1>
+        <form action="login.php" id="f" method="post">
+          <?php include('error.php');?>
+          <div class="txt_field">
+            <input type="text" id="username" name="email" />
+            <label for="name">Username</label>
+          </div>
+          <div class="txt_field">
+            <input type="password" id="password1" name="password" />
+            <label for="name">Password</label>
+          </div>
+          <div class="pass">Forgot Password?</div>
+          <div class="btnsub">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <div id="errormes"></div>
+          </div>
+          <div class="sign_up">
+            Create an Account / <a href="sign_up.html">Sign-up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+<!--
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn&SignUp</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="" class="sign-in-form">
+            <h2 class="title">Sign In</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <div class="sign_up">Create an Account / <a href="#">Sign-up</a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+  </head>
+  <body>
+    <h2>Login</h2>
+    <form action="login.php" method="post">
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" name="username" /><br />
+      <label for="password">Password:</label><br />
+      <input type="password" id="password" name="password" /><br /><br />
+      <input type="submit" value="Login" />
+    </form>
+  </body>
+</html> -->
